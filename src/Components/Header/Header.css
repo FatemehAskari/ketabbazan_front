@@ -9,7 +9,7 @@
     text-align: center;
     margin-bottom: 76px;
     direction: rtl;
-    margin-top:57px;
+    /* margin-top:57px; */
 }
 .home_img{
     width: 100%;
@@ -24,18 +24,21 @@
 }
 .home-banner__start-btn{
     font-family: 'BYekan';
-    height: 48px;
-    width: 550px; 
-    padding: 16px; 
+    height: 56px;
+    width: 256px;
+    color: #fff;
+    padding: 16px;
     font-size: 18px;
+    font-weight: 800;
     border-radius: 32px;
-    background-color: #fff;
+    box-shadow: 0 0 0 6px rgba(30, 47, 151, 0.2);
+    border: none;
+    background-color: #1DA7EC;
     margin-top: 32px;
-    border:1px solid #fff  ;
-    outline:8px solid #6a809b ;
+    cursor: pointer;
 }
-.home-banner__start-btn:hover {
-    border: 3px solid #fff;
+.home-banner__start-btn:hover {    
+    box-shadow: 0 0 0 6px rgba(26, 167, 236, 0.5);
 }
 .home_info{
     margin-top: 30px;
@@ -47,12 +50,12 @@
 }
 @media (max-width: 600px) {
     .home-banner__start-btn{
-        width: 400px;
+        width: 300px;
     }
 }
 @media (max-width: 400px) {
     .home-banner__start-btn{
-        width: 280px;
+        width: 220px;
     }
     .home_info{
         font-size: 17px;

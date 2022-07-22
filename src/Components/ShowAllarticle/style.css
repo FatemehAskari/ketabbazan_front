@@ -1,0 +1,42 @@
+.showall_summary{
+    width: 80%;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.showar_tarikh{
+    font-size: 12px;
+}
+
+.showarti_fa{
+    margin-right: 5%;
+}
+.showar_owner{
+    font-size: 13px;
+}
+.showar_title{
+    font-size: 16px;
+}
+@media (max-width: 500px) {
+    .DesignQuiz_summarybook{
+        font-size: 12px;
+    }
+    .showarti_fa{
+        margin-right: 3%;
+    }
+
+    .showall_summary{
+        width: 90%;
+        line-height: 1.4;
+        font-size: 12px;    
+    }
+    .showar_title{
+        font-size: 14.5px;
+    }
+    .showar_owner{
+        font-size: 11.5px;
+    }
+    .showar_tarikh{
+        font-size: 11px;
+    }
+}

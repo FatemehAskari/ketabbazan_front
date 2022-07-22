@@ -9,7 +9,6 @@ import Readbookimage from "../../assets/Image/readbook.jpg";
 import Makequestion from "../../assets/Image/makequesion.jpg";
 import Makearticle from "../../assets/Image/makearticle.jpg";
 
-
 const Workinfo = () => {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -39,32 +38,42 @@ const Workinfo = () => {
         چرا کتاب بازان؟
       </Typography>
       <Box sx={{ width: "100%" }}>
-        <Grid sx={{ display: "flex", justifyContent: "center" }} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item sm={0.75} xs={0} ></Grid>
-          <Grid  className="workinfo_grid" item sm={3.5} xs={11} >
-            <Paper
-              className="Work_Paper"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.445) 0px 2px 10px" }}
-            >
-              <img
-                className="workinfo_img"
-                src={Readbookimage}
-                alt="Readbook"
-              />
-              <div className="workinfo_title" >
-                <h2 style={{ color: "#1565C0", marginTop: "10px" }}>
-                  مطالعه کتاب
-                </h2>
-                <h3 style={{ marginTop: "20px" }}>
-                  می تونی با استفاده از پی دی اف ویوور به کتاب مورد علاقه ات را
-                  مطالعه کنی{" "}
-                </h3>
-              </div>
-            </Paper>
-          </Grid>
+        <Grid
+          sx={{ display: "flex", justifyContent: "center" }}
+          container
+          rowSpacing={3}
+          columnSpacing={{ xs: 0, sm: 2, md: 3 }}
+        >
+          <Grid item sm={0.75} xs={0}></Grid>
+            <Grid className="workinfo_grid" item sm={3.5} xs={12}>
+              <Paper
+                className="Work_Paper"
+                style={{ boxShadow: "rgba(0, 0, 0, 0.445) 0px 2px 10px" }}
+              >
+                <img
+                  className="workinfo_img"
+                  src={Readbookimage}
+                  alt="Readbook"
+                />
+                <div className="workinfo_title">
+                  <div
+                    className="workinfo-onvan"
+                    style={{ color: "#1565C0", marginTop: "10px" }}
+                  >
+                    مطالعه کتاب
+                  </div>
+                  <div
+                    className="workinfo_descibe"
+                    style={{ marginTop: "20px" }}
+                  >
+                    می تونی با استفاده از پی دی اف ویوور کتاب مورد علاقه ات را
+                    مطالعه کنی{" "}
+                  </div>
+                </div>
+              </Paper>
+            </Grid>
 
-
-          <Grid  className="workinfo_grid" item sm={3.5} xs={11}>
+          <Grid className="workinfo_grid" item sm={3.5} xs={12}>
             <Paper
               className="Work_Paper"
               style={{ boxShadow: "rgba(0, 0, 0, 0.445) 0px 2px 10px" }}
@@ -74,18 +83,22 @@ const Workinfo = () => {
                 src={Makequestion}
                 alt="Loginpicture"
               />
-              <div className="workinfo_title" >
-                <h2 style={{ color: "#1565C0", marginTop: "10px" }}>
+              <div className="workinfo_title">
+                <div
+                  className="workinfo-onvan"
+                  style={{ color: "#1565C0", marginTop: "10px" }}
+                >
                   طراحی کوییز
-                </h2>
-                <h3 style={{ marginTop: "20px" }}>
-                    میتونی کتابی رو که مطالع کردی ازش سوال طرح کنی
-                </h3>
+                </div>
+                <div className="workinfo_descibe" style={{ marginTop: "20px" }}>
+                  میتونی از کتابی که مطالعه کردی سوال طرح کنی و تو کوییز شرکت
+                  کنی
+                </div>
               </div>
             </Paper>
           </Grid>
 
-          <Grid className="workinfo_grid" item sm={3.5} xs={11}>
+          <Grid className="workinfo_grid" item sm={3.5} xs={12}>
             <Paper
               className="Work_Paper"
               style={{ boxShadow: "rgba(0, 0, 0, 0.445) 0px 2px 10px" }}
@@ -95,13 +108,16 @@ const Workinfo = () => {
                 src={Makearticle}
                 alt="Loginpicture"
               />
-              <div className="workinfo_title" >
-                <h2 style={{ color: "#1565C0", marginTop: "10px" }}>
-                    مقاله گذاشتن        
-                </h2>
-                <h3 style={{ marginTop: "20px" }}>
-                    می تونی درباره کتابی که دوست داری مقاله بذاری
-                </h3>
+              <div className="workinfo_title">
+                <div
+                  className="workinfo-onvan"
+                  style={{ color: "#1565C0", marginTop: "10px" }}
+                >
+                  مقاله گذاشتن
+                </div>
+                <div className="workinfo_descibe" style={{ marginTop: "20px" }}>
+                  می تونی درباره کتابی که دوست داری مقاله بذاری
+                </div>
               </div>
             </Paper>
           </Grid>

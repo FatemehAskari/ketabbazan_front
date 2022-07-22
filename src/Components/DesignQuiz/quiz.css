@@ -1,0 +1,35 @@
+.designquiz_des{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    /* position: fixed; */
+}
+.DesignQuiz_summarybook{
+    width: 75%;
+    height: 36%;
+    font-size: 14px;
+}
+@media (max-width: 900px) {
+    .designquiz_des{
+        margin-top: 20px;
+        margin-right: 2.1vh;
+        margin-left: 2.1vh;
+        position: static;
+    }
+
+    .DesignQuiz_summarybook{
+        width: 98%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .DesignQuiz_summarybook{
+        font-size: 12px;
+    }
+
+    .designquiz_des{
+        margin-top: 80px;
+        margin-bottom: 90px;
+        /* position: fixed; */
+    }
+}

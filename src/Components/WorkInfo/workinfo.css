@@ -20,15 +20,64 @@
 .workinfo_title{
     margin-right: 20px;
     margin-left: 20px;
+    /*textJustify: "inter-word",
+    textAlign: "justify",*/
+    line-height: 2;
+}
+.workinfo-onvan{
+    font-size: 18px;
+    font-weight: 800;
+}
+.workinfo_descibe{
+    font-size: 17px;
+    font-weight: 550;
 }
 @media (max-width: 900px ) and (min-width:600px) {
     .Work_Paper{
-        height: 480px;
+        height: 410px;
+    }
+    .workinfo_img{
+        height: 200px;
+        width: 65%;
+    }
+    .workinfo-onvan{
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .workinfo_descibe{
+        font-size: 16px;
+        font-weight: 550;
+    }
+
+    .workinfo_title{
+        line-height: 1.8;
     }
 }
 @media (max-width: 599px) {
     .Work_Paper{
         margin-right: 50px;
         margin-left: 50px;
+    }
+    .workinfo_grid{
+        width: 100vw;
+    }
+    .workinfo_img{
+        height: 200px;
+        width: 65%;
+    }
+    .Work_Paper{
+        height: 380px;
+    }
+    .workinfo-onvan{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .workinfo_descibe{
+        font-size: 15px;
+        font-weight: 550;
+    }
+
+    .workinfo_title{
+        line-height: 1.7;
     }
 }

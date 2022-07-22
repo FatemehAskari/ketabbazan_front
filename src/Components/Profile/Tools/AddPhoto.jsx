@@ -27,8 +27,7 @@ const AddPhoto = () => {
            selectedFile.name
         );
         
-        console.log(selectedFile);
-
+      
         axios.post(`${baseUrl}/profile/image/`, formData,{
         headers: {
             'content-type': 'application/json ',

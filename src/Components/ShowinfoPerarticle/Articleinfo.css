@@ -1,0 +1,18 @@
+.Artcleinfo-head{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+@media (max-width: 900px ) and (min-width:600px) {
+    .Artcleinfo-head{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 600px){
+    .Artcleinfo-head{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}

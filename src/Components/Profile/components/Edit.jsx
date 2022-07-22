@@ -21,8 +21,7 @@ import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
 import rtlPlugin from "stylis-plugin-rtl";
 import OutlinedInput from '@mui/material/OutlinedInput';
-
-
+import { baseUrl } from './../../Variable';
 
 
 const cacheRtl = createCache({
@@ -54,7 +53,7 @@ const Edit = () => {
   console.log(token);
 
   const intialize = () => {
-    axios.get('http://127.0.0.1:8000/profile/info/', {
+    axios.get(`${baseUrl}/profile/info/`, {
       headers: {
         'Content-Type': 'application/json ',
         'Authorization': token
@@ -159,7 +158,7 @@ const user = {
    const handleSubmit = () =>
    {
       axios.put(
-      'http://127.0.0.1:8000/profile/info/',
+      `${baseUrl}/profile/info/`,
       JSON.stringify(user),
       {
         headers: {

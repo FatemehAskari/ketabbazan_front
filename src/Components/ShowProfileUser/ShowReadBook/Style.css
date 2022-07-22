@@ -1,0 +1,30 @@
+.readbook_name{
+    font-size: 16px;
+}
+.readbook_author{
+    font-size: 13px;
+}
+.readbook_summary1{
+    font-size: 14px;
+    line-height: 1.5;
+    width: 65%
+}
+.readbook_rate{
+    font-size: 13px;
+}
+@media (max-width: 600px){
+    .readbook_name{
+        font-size: 14.5px;
+    }
+    .readbook_author{
+        font-size: 11.5px;
+    }
+    .readbook_summary1{
+        font-size: 12.2px;
+        width: 90%;
+        line-height: 1.4;
+    }
+    .readbook_rate{
+        font-size: 12px;
+    }
+}

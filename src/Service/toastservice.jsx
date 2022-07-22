@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-const defaultPosition = toast.POSITION.TOP_RIGHT;
+const defaultPosition = toast.POSITION.BOTTOM_CENTER;
 
   const showToast = ( type = "success", msg, autoClose = 2000, className = "primaryColor", position = defaultPosition ) => {
     if (type === "success") {

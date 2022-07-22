@@ -121,7 +121,6 @@ const SignUp = ({ history }) => {
               "Content-Type": "application/json",
             },
           },
-          { withCredentials: true }
         );
         console.log(response.data);
         if (response.status === 201) {
@@ -161,19 +160,12 @@ const SignUp = ({ history }) => {
           src={SignUpimg}
           alt="Signuppicture"
           style={{
-            height: "200px",
-            display: "flex",
-            width:"360px",
-            justifyContent: "center",
-            marginTop: "-5px",
-            marginBottom: "-26.5px",
-            marginLeft:"375px"
           }}
         />
         <CacheProvider value={cacheRtl}>
           <br />
           <TextField
-            style={{ fontFamily: "BYekan", marginTop: "0px" }}
+            style={{ fontFamily: "BYekan", marginTop: "19px" }}
             InputLabelProps={{
               style: { fontSize: 17, fontFamily: "BYekan" },
             }}
@@ -328,7 +320,7 @@ const SignUp = ({ history }) => {
             </Link>
           </Grid>
         </CacheProvider>
-        <ToastContainer />
+        <ToastContainer rtl={true}/>
       </Box>
     </div>
   );

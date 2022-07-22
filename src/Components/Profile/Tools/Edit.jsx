@@ -131,8 +131,11 @@ const user = {
 
    const handleSubmit = () =>
    {
+     if(nickName!==""){
+      localStorage.setItem("nickname", nickName); 
+     }
       console.log(month);
-      console.log(day);
+      console.log(day);    
       axios.post(
       `${baseUrl}/profile/info/`,
       JSON.stringify(user),
@@ -143,7 +146,7 @@ const user = {
         }
       }
     ) .then((res) => {
-       console.log(res.status);
+       console.log(res.status);           
      })  
    }
 

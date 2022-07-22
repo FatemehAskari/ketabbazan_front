@@ -1,0 +1,27 @@
+.showdia_andazeh{
+    width: 400px;
+    height: 250px;
+}
+
+.showdia_ti{
+    font-size: 15.5px;
+}
+
+@media (max-width: 500px) {
+    .showdia_andazeh{
+        width: 300px;
+        height: 200px;
+    }
+    .showdia_ti{
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px) {
+    .showdia_andazeh{
+        width: 280px;
+        height: 200px;
+    }
+    .showdia_ti{
+        font-size: 12px;
+    }
+}

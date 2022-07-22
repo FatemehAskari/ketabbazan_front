@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
-import { baseUrl } from "../../Variable";
 import axios from "axios";
-import Paper from "@mui/material/Paper";
+import "swiper/swiper.min.css";
+import "swiper/swiper-bundle.min.css";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
+import { baseUrl } from "../../Variable";
+import ReactLoading from "react-loading";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
-import ReactLoading from "react-loading";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 
 export default function SimpleSlider() {
   const [apiLoading, setApiLoading] = useState(false);
   const [bookinfo, setbookinfo] = useState([]);
+
   useEffect(() => {
     setApiLoading(true);
     axios({
@@ -26,6 +25,13 @@ export default function SimpleSlider() {
       setApiLoading(false);
     });
   }, []);
+
+  const MouseOver = (event) => {
+    event.target.style.color = "#1565C0";
+  };
+  const MouseOut = (event) => {
+    event.target.style.color = "black";
+  };
 
   SwiperCore.use([Navigation, Pagination]);
   return (
@@ -58,7 +64,7 @@ export default function SimpleSlider() {
               justifyContent: "center",
               padding: "auto",
               marginTop: 96,
-              marginBottom: 96,
+              marginBottom: 26,
             }}
           >
             <ReactLoading
@@ -76,9 +82,11 @@ export default function SimpleSlider() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            marginRight:"5%",
+            marginLeft:"5%"
           }}
         >
-          <div style={{ width: "100%" }}>
+          <div style={{ width: "100%", direction:"rtl" }}>
             <Swiper
               breakpoints={{
                 // when window width is >= 640px
@@ -91,15 +99,29 @@ export default function SimpleSlider() {
                   slidesPerView: 8,
                   spaceBetween: 0,
                 },
-                900: {
+                1000: {
                   slidesPerView: 6,
                   spaceBetween: 0,
                 },
+                800: {
+                  slidesPerView: 5,
+                  spaceBetween: 0,
+                },
+
                 600: {
                   slidesPerView: 4,
                   spaceBetween: 0,
                 },
-                500: {
+
+                560: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                400: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                470: {
                   slidesPerView: 3,
                   spaceBetween: 0,
                 },
@@ -117,7 +139,7 @@ export default function SimpleSlider() {
                 <SwiperSlide key={index}>
                   <Link
                     to={{
-                      pathname: `/showbookinfo/${info.id}`,
+                      pathname: `/bookinfo/${info.id}`,
                     }}
                     style={{ textDecoration: "none" }}
                   >
@@ -134,7 +156,7 @@ export default function SimpleSlider() {
                         display: "flex",
                         alignItems: "center",
                         flexDirection: "column",
-                        height: "340px",
+                        height: "300px",
                       }}
                     >
                       <div
@@ -148,6 +170,8 @@ export default function SimpleSlider() {
                             marginTop: "20px",
                             height: "150px",
                             width: "120px",
+                            boxShadow: "rgba(0, 0, 0, 0.445) 0px 2px 10px",
+                            borderRadius: "2px",
                           }}
                         />
                       </div>
@@ -156,6 +180,8 @@ export default function SimpleSlider() {
                         className="showbook_name"
                         variant="subtitle1"
                         component="div"
+                        onMouseOver={MouseOver}
+                        onMouseOut={MouseOut}
                       >
                         {info.name}
                       </div>

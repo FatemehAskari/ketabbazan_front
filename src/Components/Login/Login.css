@@ -26,6 +26,31 @@
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
+.Forgetform_form{
+    width:350px;
+    background: #fff;    
+    border: 1px solid #ccc;
+    padding-right:25px;
+    padding-left:20px;
+    padding-top: 20px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+.Loginform_img{
+    /*height: "200px",
+    width:"85%",
+    marginBottom: "1px",
+    marginRight: "6px",
+    marginTop: "2px",
+    marginBottom:"-26.5px",*/
+
+    height: 200px;
+    width: 85%;
+    margin-bottom: 1px;
+    margin-right: 6px;
+    margin-top: 2px;
+    margin-bottom: -26.5px;
+}
 .loading-login {
     height: 30px !important;
     display: flex;
@@ -33,12 +58,18 @@
      align-items: center;
   } 
 
-/* @media (max-width: 767px)
+ @media (max-width: 600px)
 {
     .Loginform_form{
-        width:350px;
+        width:90%;
+        
     }
-} */
+
+
+    .Loginform{ 
+        /*margin-bottom: 10px;*/
+    }
+} 
 
 .box {
     display: flex;
@@ -50,4 +81,11 @@
     width: 100px;
     height: 100px;
    
+  }
+
+  @media (max-width: 450px){
+    .Forgetform_form{
+        width:90%;
+        
+    }
   }

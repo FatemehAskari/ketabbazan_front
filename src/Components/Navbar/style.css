@@ -1,0 +1,74 @@
+.DrawerComp_list{
+    width: 25vw;
+}
+.Nav2_Avatar{
+    width: 56px;
+    height: 56px;
+}
+/* .Searchbar_appbar{
+    margin-right: calc(100% - 500px);
+} */
+.Nav_img{
+    height: 62px;
+    width: 60px;
+}
+.Nav_type{
+    font-size: 25px;
+    font-weight: 900;
+}
+.OPprofile_App{
+    height: 260px;
+    padding-bottom: 20px;
+    margin-right: calc(100% - 190px); ;
+}
+@media (max-width: 700px) {
+    .DrawerComp_list{
+        width: 50vw;
+    }
+    .Nav2_Avatar{
+        width: 52px;
+        height: 52px;
+    }
+    .Nav_type{
+        font-size: 23px;
+        font-weight: 900;
+    }
+    .Nav_img{
+        height: 60px;
+        width: 58px;
+    }
+}
+@media (max-width: 600px) {
+    .DrawerComp_list{
+        width: 60vw;
+    }
+    .Nav2_Avatar{
+        width: 49px;
+        height: 49px;
+    }
+    .Nav_type{
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .Nav_img{
+        height: 54px;
+        width: 52px;
+    }
+}
+@media (max-width: 450px) {
+    .DrawerComp_list{
+        width: 70vw;
+    }
+    .Nav2_Avatar{
+        width: 43px;
+        height: 43px;
+    }
+    .Nav_type{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .Nav_img{
+        height: 50px;
+        width: 48px;
+    }
+}

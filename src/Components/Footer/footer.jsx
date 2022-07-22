@@ -1,49 +1,85 @@
-import footerBg from '../../assets/Image/footer-bg.png';
-import instagram from '../../assets/social/instagram.png';
-import email from '../../assets/social/email.png';
-import whatsapp from '../../assets/social/whatsapp.png';
-import twitter from '../../assets/social/twitter.png';
-import phone from '../../assets/social/call.png';
-
-//import './style.scss';
+// import footerBg from '../../assets/Image/footer-bg.png';
+// import instagram from '../../assets/social/instagram.png';
+// import email from '../../assets/social/email.png';
+// import whatsapp from '../../assets/social/whatsapp.png';
+// import twitter from '../../assets/social/twitter.png';
+// import phone from '../../assets/social/call.png';
+import footer from "../../assets/Image/footer1.jpg";
+import instagram from "../../assets/social/instagram.png";
+import facebook from "../../assets/social/facebook.png";
+import whatsapp from "../../assets/social/whatsapp.png";
+import twitter from "../../assets/social/twitter.png";
+import messenger from "../../assets/social/messenger.png";
+import youtube from "../../assets/social/youtube.png";
+import linkin from "../../assets/social/linkin.png";
+import "./style.css";
 
 const Footer = () => {
   return (
     <div
-      className="appbarWrapperforfooter"
-      style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        marginTop: "120px",
+        justifyContent: "center",
+        direction: "rtl",
+        textAlign: "center",
+      }}
     >
       <img
-        style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}
-        src={footerBg}
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "35%",
+          objectFit: "cover",
+          zIndex: -1,
+        }}
+        src={footer}
         alt="footer background nature"
       />
+      <div className="footer_ti">در شبکه های زیر ما را دنبال کنید</div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="footer_social"
+      >
+        <a href="https://www.instagram.com/ketabbazan_ml/" target="_blank">
+          <img
+            alt="instagram"
+            src={instagram}
+            style={{marginRight:"0px"}}
+            className="footer_ajza"
+          />
+        </a>
 
-      <div className="my-social" style={{ textAlign: 'center' }}>
-        <p className="my-footer__content">تماس با ما</p>
-        <a href="mailto:contact.kooleposhti@gmail.com">
-          <img src={email} alt="email" className="my-social__Icon" />
+        <a href="https://www.facebook.com/profile.php?id=100082999008181" target="_blank">
+          <img
+            alt="facebook"
+            src={facebook}
+            style={{}}
+            className="footer_ajza"
+          />
         </a>
-        <a href="https://www.instagram.com/kooleposhti_learning_platform/" target="_blank">
-          <img src={instagram} alt="instagram" className="my-social__Icon" />
-        </a>
-        <a href="https://twitter.com/kooleposhti_edu" target="_blank">
-          <img src={twitter} alt="twitter" className="my-social__Icon" />
-        </a>
-        <a href="https://wa.me/989037505722" target="_blank">
-          <img src={whatsapp} alt="whatsapp" className="my-social__Icon" />
-        </a>
-        <a href="tel:+989037505722">
-          <img src={phone} alt="phone" className="my-social__Icon" />
-        </a>
-      </div>
 
-      <div className="my-footer__bylove">
-        <span className="my-footer__content__s">ساخته شده با</span>
-        <div className="my-footer__content__h">
-          <span>&hearts;</span>
-        </div>
-        <span className="my-footer__content__s">در ایران</span>
+        <a href="https://www.whatsapp.com/" target="_blank">
+          <img
+            alt="whatsapp"
+            src={whatsapp}
+            style={{}}
+            className="footer_ajza"
+          />
+        </a>
+        <a href="https://twitter.com/ketabbazan" target="_blank">
+          <img alt="twitter" src={twitter} style={{}} className="footer_ajza" />
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img alt="linkin" src={linkin} style={{}} className="footer_ajza" />
+        </a>
       </div>
     </div>
   );

@@ -1,0 +1,58 @@
+/* .shownewarticlecro-Paper{
+    width: calc((90vw) / 4);
+    height: auto
+} */
+.shownewarticlecro-img{
+height: 190px;
+object-fit: cover;
+}
+.shownewarticlecro-Paper{
+    /* width: "293px",
+    height: "400px", */
+
+    width: 293px;
+    height: 400px;
+}
+.showar_title{
+    /* fontSize: "16px", */
+
+    font-size: 16px;
+}
+.showar_sum{
+    /* fontSize: "15px", */
+    font-size: 15px;
+    line-height: 1.52;
+}
+.aricle_p{
+    /* fontSize: "14px" */
+    font-size: 14px;
+}
+.article_link{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 479px ) {
+    .shownewarticlecro-Paper{
+        width: 250px;
+        height: 390px;            
+    }
+
+    .showar_title{
+        /* fontSize: "16px", */
+    
+        font-size: 14px;
+    }
+
+    .showar_sum{
+        /* fontSize: "15px", */
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    .aricle_p{
+        /* fontSize: "14px" */
+        font-size: 12px;
+    }
+    
+}
+

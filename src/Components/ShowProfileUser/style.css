@@ -1,0 +1,39 @@
+.ShowProfile_contain{
+   margin-right: 2%; 
+   margin-left: 1.5%;
+}
+.ShowProfile_bio{
+    font-size: 15px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.ShowProfile_back{
+    /* background-image:url("../../assets/Image/backgr.png"); */
+}
+@media (max-width:760px) {
+
+    .ShowProfile_bio{
+        font-size: 13px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .ShowProfile_bio{
+        font-size: 12px;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width:900px) {
+
+    .ShowProfile_bio{
+        font-size: 13.5px;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
